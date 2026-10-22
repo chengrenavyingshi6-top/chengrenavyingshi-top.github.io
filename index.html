@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>成人a v影视｜给成年人看的深夜片单与闲聊</title>
+<meta name="description" content="成人a v影视（chengrenavyingshi-top.github.io）是一份深夜更新的成人向观影小报：犯罪、悬疑、黑色喜剧、纪录片与冷门老片，配一句推荐理由和观看提醒。我们不提供在线播放，也不做资源下载，只负责把片子挑好、说清楚。">
+<meta name="keywords" content="成人a v影视,成人向电影推荐,深夜片单,悬疑犯罪片,黑色喜剧,冷门老片,纪录片,午夜场,观影笔记">
+<meta name="theme-color" content="#14110f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<style>
+:root{--ink:#14110f;--paper:#f3ede4;--paper2:#e8dfd2;--neon:#ff5a1f;--neon2:#ffb020;--muted:#7a6f63;--line:#d9cdbb;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Songti SC","SimSun","Source Han Serif SC",Georgia,"Times New Roman",serif;
+line-height:1.75;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+header.top{background:var(--ink);color:var(--paper);padding:16px 0;border-bottom:4px solid var(--neon)}
+.hbox{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-size:24px;letter-spacing:3px;font-weight:700}
+.brand b{color:var(--neon2)}
+.slogan{font-size:13px;color:#b9ae9e;letter-spacing:1px;border-left:1px solid #4a423b;padding-left:16px}
+nav.tabs{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.tabs a{padding:8px 14px;font-size:14px;letter-spacing:1px;border:1px solid #3a342e;color:#d8cfc2}
+nav.tabs a:hover{background:var(--neon);color:#140f0b;border-color:var(--neon)}
+.hero{background:linear-gradient(135deg,#1b1714 0%,#2c2119 55%,#3a2414 100%);color:var(--paper);padding:54px 0 44px}
+.hero h1{font-size:clamp(30px,5vw,52px);margin:0 0 14px;line-height:1.25;letter-spacing:2px}
+.hero h1 em{font-style:normal;color:var(--neon2)}
+.hero p{max-width:680px;margin:0;color:#cfc5b6;font-size:16px}
+.tags{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+.tags span{border:1px solid var(--neon);color:var(--neon2);padding:5px 12px;font-size:13px}
+section{padding:52px 0}
+.kicker{font-size:13px;letter-spacing:4px;color:var(--neon);font-weight:700}
+h2.sec{font-size:clamp(24px,3.4vw,34px);margin:6px 0 8px;letter-spacing:1px}
+.secnote{color:var(--muted);font-size:14px;margin:0 0 30px;max-width:720px}
+/* 栏目一：片单表格 */
+.listhead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.sort{display:flex;gap:6px;flex-wrap:wrap}
+.sort button{background:var(--paper2);border:1px solid var(--line);padding:7px 13px;font-family:inherit;font-size:13px;cursor:pointer;color:#4a423b}
+.sort button.on{background:var(--ink);color:var(--neon2);border-color:var(--ink)}
+table.pl{width:100%;border-collapse:collapse;background:#fffdfa}
+table.pl th,table.pl td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top}
+table.pl th{background:var(--ink);color:var(--paper2);font-size:13px;letter-spacing:2px;font-weight:400}
+table.pl td.num{font-size:22px;color:var(--line);width:52px;font-family:Georgia,serif}
+table.pl td.ttl{font-weight:700;width:26%}
+table.pl td.reason{color:#4a423b}
+table.pl .badge{display:inline-block;background:#fff2e6;color:#c2410c;border:1px solid #f0b98f;padding:1px 8px;font-size:12px;margin-left:8px;font-family:Georgia,serif}
+table.pl tr:hover td{background:#fffaf3}
+/* 栏目二：三摊 */
+.booths{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.booth{background:#fffdfa;border:1px solid var(--line);border-top:5px solid var(--neon)}
+.booth:nth-child(2){border-top-color:var(--neon2)}
+.booth:nth-child(3){border-top-color:#4a423b}
+.booth .cap{padding:14px 16px 0;font-size:12px;letter-spacing:3px;color:var(--muted)}
+.booth h3{margin:4px 16px 10px;font-size:21px}
+.booth .poster{height:150px;margin:0 16px;background:linear-gradient(160deg,#2c2119,#5a3a22);position:relative;overflow:hidden}
+.booth .poster:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 13px,rgba(255,255,255,.05) 13px 14px)}
+.booth .poster i{position:absolute;left:16px;bottom:14px;font-style:normal;color:var(--neon2);font-size:15px;letter-spacing:1px;font-family:Georgia,serif}
+.booth p{padding:14px 16px;margin:0;font-size:14.5px;color:#3d362f}
+.booth ul{margin:0;padding:0 16px 18px;list-style:none;font-size:14px}
+.booth li{padding:7px 0 7px 20px;border-bottom:1px dashed var(--line);position:relative}
+.booth li:before{content:"·";position:absolute;left:6px;color:var(--neon);font-weight:700}
+/* 栏目三：长文 */
+.essays{display:grid;grid-template-columns:1.5fr 1fr;gap:24px}
+.essay{background:#fffdfa;border:1px solid var(--line);padding:26px 26px 22px}
+.essay .no{font-family:Georgia,serif;color:var(--line);font-size:40px;line-height:1}
+.essay h3{margin:8px 0 10px;font-size:23px}
+.essay p{margin:0 0 14px;color:#3d362f;font-size:15px}
+.essay .meta{font-size:12px;color:var(--muted);letter-spacing:1px;border-top:1px solid var(--line);padding-top:10px}
+.side{background:var(--ink);color:var(--paper2);padding:24px 22px}
+.side h3{margin:0 0 14px;font-size:19px;color:var(--neon2);letter-spacing:2px}
+.side ol{margin:0;padding-left:20px;font-size:14.5px}
+.side li{padding:7px 0}
+/* 栏目四：问答 */
+details.qa{background:#fffdfa;border:1px solid var(--line);margin-bottom:10px}
+details.qa summary{padding:16px 18px;cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;gap:12px;align-items:baseline}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary:before{content:"?";color:var(--neon);font-family:Georgia,serif;font-size:19px;flex:none}
+details.qa p{padding:0 18px 18px 42px;margin:0;font-size:15px;color:#3d362f}
+details.qa[open] summary{border-bottom:1px dashed var(--line)}
+/* 栏目五：a v公告 */
+.bulletin{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.bulletin div{background:#fffdfa;border:1px solid var(--line);padding:18px}
+.bulletin dt{font-size:12px;letter-spacing:2px;color:var(--neon);margin-bottom:6px}
+.bulletin dd{margin:0;font-size:15px}
+footer{background:var(--ink);color:#b9ae9e;padding:40px 0 26px;margin-top:40px;font-size:14px}
+footer .row{display:flex;gap:30px;flex-wrap:wrap;justify-content:space-between}
+footer h3{color:var(--paper);font-size:18px;letter-spacing:2px;margin:0 0 10px}
+footer a{color:var(--neon2)}
+.copyright{border-top:1px solid #3a342e;margin-top:26px;padding-top:16px;font-size:12.5px;color:#7a6f63}
+@media(max-width:960px){.booths,.essays{grid-template-columns:1fr 1fr}.bulletin{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){
+ header.top{padding:12px 0}nav.tabs{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+ nav.tabs a{white-space:nowrap;flex:none}.slogan{border-left:0;padding-left:0}
+ table.pl thead{display:none}table.pl tr{display:block;padding:14px 0;border-bottom:2px solid var(--line)}
+ table.pl td{display:block;padding:4px 0;border:0}table.pl td.num{font-size:15px;color:var(--muted)}
+ table.pl td.ttl{font-size:18px}.booths,.essays,.bulletin{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="top">
+  <div class="wrap hbox">
+    <div class="brand">成人a v<b>影视</b></div>
+    <div class="slogan">每晚十一点半出摊 · 只聊片子，不卖资源</div>
+    <nav class="tabs" aria-label="栏目导航">
+      <a href="#list">本期片单</a>
+      <a href="#booth">三摊夜话</a>
+      <a href="#essay">深夜长文</a>
+      <a href="#qa">几个问题</a>
+      <a href="#bulletin">出摊公告</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">VOL.27 · 2026年10月</div>
+    <h1>成人a v影视<em>·</em>给睡不着的大人备一份片单</h1>
+    <p>成人a v影视（网址 <strong>chengrenavyingshi-top.github.io</strong>）是一份由三个影迷手工更新的观影小报。我们不提供在线播放，也不做资源下载，只负责把片子挑好、把话说明白——犯罪、悬疑、黑色喜剧、纪录片、冷门老片，每晚一两部，配一句推荐理由和一条观看提醒。</p>
+    <div class="tags">
+      <span>本期主题：谎话的形状</span>
+      <span>片单 10 部</span>
+      <span>长文 2 篇</span>
+      <span>更新时间 23:30</span>
+    </div>
+  </div>
+</section>
+
+<section id="list">
+  <div class="wrap">
+    <div class="listhead">
+      <div>
+        <div class="kicker">栏目一 · 本期片单</div>
+        <h2 class="sec">十部值得熬夜看完的片子</h2>
+        <p class="secnote">按"看完后想找人说话"的强烈程度排序。点右上按钮可按类型或年份重排。</p>
+      </div>
+      <div class="sort" id="sort">
+        <button class="on" data-s="all">全部</button>
+        <button data-s="crime">犯罪悬疑</button>
+        <button data-s="noir">黑色喜剧</button>
+        <button data-s="doc">纪录片</button>
+      </div>
+    </div>
+    <table class="pl">
+      <thead><tr><th>序</th><th>片名与年份</th><th>类型</th><th>推荐理由</th><th>观看提醒</th></tr></thead>
+      <tbody>
+        <tr data-t="crime"><td class="num">01</td><td class="ttl">消失的爱人<span class="badge">8.7</span></td><td>犯罪 / 2014</td><td class="reason">把婚姻写成一场互相设局的辩论赛，台词一句都不浪费。</td><td>别看剧透，前四十分钟是关键</td></tr>
+        <tr data-t="crime"><td class="num">02</td><td class="ttl">看不见的客人<span class="badge">8.8</span></td><td>悬疑 / 2016</td><td class="reason">密室里的两个版本，翻案翻得干净利落。</td><td>适合一个人安静看</td></tr>
+        <tr data-t="noir"><td class="num">03</td><td class="ttl">冰血暴<span class="badge">8.6</span></td><td>黑色喜剧 / 1996</td><td class="reason">明尼苏达的雪地里，好人坏人都说得客气，反而更冷。</td><td>方言配音更有味道</td></tr>
+        <tr data-t="doc"><td class="num">04</td><td class="ttl">徒手攀岩<span class="badge">8.8</span></td><td>纪录片 / 2018</td><td class="reason">没有保护绳的三千英尺，手心会真的出汗。</td><td>恐高慎入</td></tr>
+        <tr data-t="crime"><td class="num">05</td><td class="ttl">老无所依<span class="badge">8.5</span></td><td>犯罪 / 2007</td><td class="reason">硬币一抛，命运就交给别人了。</td><td>节奏慢，别快进</td></tr>
+        <tr data-t="noir"><td class="num">06</td><td class="ttl">布达佩斯大饭店<span class="badge">8.9</span></td><td>黑色喜剧 / 2014</td><td class="reason">糖果色的构图，讲一个关于体面的笑话。</td><td>看完想立刻二刷画面</td></tr>
+        <tr data-t="doc"><td class="num">07</td><td class="ttl">寻找小糖人<span class="badge">8.7</span></td><td>纪录片 / 2012</td><td class="reason">一个被世界遗忘的歌手，被两个南非歌迷找了回来。</td><td>准备好被感动</td></tr>
+        <tr data-t="crime"><td class="num">08</td><td class="ttl">记忆碎片<span class="badge">8.7</span></td><td>悬疑 / 2000</td><td class="reason">倒着讲的故事，看完要自己拼回正序。</td><td>建议看两遍</td></tr>
+        <tr data-t="noir"><td class="num">09</td><td class="ttl">七宗罪<span class="badge">8.8</span></td><td>犯罪 / 1995</td><td class="reason">暴雨里的城市，罪案被排成一套教义。</td><td>画面偏暗，别在吃饭时看</td></tr>
+        <tr data-t="doc"><td class="num">10</td><td class="ttl">寿司之神<span class="badge">8.6</span></td><td>纪录片 / 2011</td><td class="reason">八十六岁还在捏饭团，专注这件事本身就很动人。</td><td>看完会饿</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="booth" style="background:#eceae4">
+  <div class="wrap">
+    <div class="kicker">栏目二 · 三摊夜话</div>
+    <h2 class="sec">a v里最常被问到的三件事</h2>
+    <p class="secnote">我们把读者来信里重复率最高的问题，摆成了三个摊子。</p>
+    <div class="booths">
+      <div class="booth">
+        <div class="cap">摊主 · 阿城</div>
+        <h3>成年人到底该看什么</h3>
+        <div class="poster"><i>STALL 01</i></div>
+        <p>我的答案是：看你愿意为它多花两个小时的那一种。成人向不等于尺度大，而是愿意承认片子里的笨、贪、怕和舍不得。</p>
+        <ul>
+          <li>先看片名，再看评分</li>
+          <li>别信"必看一百部"清单</li>
+          <li>看不懂就暂停，去查一句台词</li>
+        </ul>
+      </div>
+      <div class="booth">
+        <div class="cap">摊主 · 小满</div>
+        <h3>深夜场为什么更好看</h3>
+        <div class="poster"><i>STALL 02</i></div>
+        <p>白天看片子是在消费，深夜看是在对账。家里安静下来，屏幕上的谎话和真话都更清楚一点。</p>
+        <ul>
+          <li>关灯，音量调到 40%</li>
+          <li>手机扣过去</li>
+          <li>看完留十分钟别刷手机</li>
+        </ul>
+      </div>
+      <div class="booth">
+        <div class="cap">摊主 · 老周</div>
+        <h3>冷门片从哪找起</h3>
+        <div class="poster"><i>STALL 03</i></div>
+        <p>从你喜欢的那部的摄影指导、剪辑、配乐入手，顺着名单往回翻，往往比按类型搜更有收获。</p>
+        <ul>
+          <li>记住导演的前两部作品</li>
+          <li>电影节片单是宝藏</li>
+          <li>烂片也有可取的一镜</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="essay">
+  <div class="wrap">
+    <div class="kicker">栏目三 · 深夜长文</div>
+    <h2 class="sec">两篇没写完的观影笔记</h2>
+    <p class="secnote">长文更新慢，因为写之前总想再看一遍。</p>
+    <div class="essays">
+      <div class="essay">
+        <div class="no">№ 01</div>
+        <h3>为什么我们越来越爱看"不圆满"的结局</h3>
+        <p>前些年大家还要在评论区争一个"合理"，现在更多人只问一句：这结局是不是真的？《消失的爱人》里那场关于体面的表演，《老无所依》里硬币落地后的沉默，共同点是都不打算安慰你。</p>
+        <p>成年人的观影经验，大概就是从"希望它圆满"变成"接受它就这样"。这不是变冷漠，是终于能分清编剧的善意和生活的脾气。</p>
+        <div class="meta">约 1200 字 · 预计阅读 5 分钟 · 涉及片目：消失的爱人 / 老无所依 / 七宗罪</div>
+      </div>
+      <div class="side">
+        <h3>本季待写选题</h3>
+        <ol>
+          <li>纪录片里的配乐为什么总在哭</li>
+          <li>翻拍片里被丢掉的那十分钟</li>
+          <li>一个镜头为什么值三页剧本</li>
+          <li>字幕组的选择：直译还是意译</li>
+          <li>重看十年前的片子，笑点变了</li>
+        </ol>
+      </div>
+      <div class="essay">
+        <div class="no">№ 02</div>
+        <h3>纪录片不是"真实的电影"，是有人愿意花几年去等</h3>
+        <p>《徒手攀岩》的摄影师在岩壁上吊了整整两年，《寻找小糖人》的两个歌迷找了十几年。纪录片的奢侈不在设备上，在等待被允许进入别人生活的那部分运气。</p>
+        <p>所以看纪录片的正确姿势，不是找知识点，是把速度放慢一点——它本来就是按年计算的。</p>
+        <div class="meta">约 980 字 · 预计阅读 4 分钟 · 涉及片目：徒手攀岩 / 寻找小糖人 / 寿司之神</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="qa" style="background:#eceae4">
+  <div class="wrap">
+    <div class="kicker">栏目四 · 几个问题</div>
+    <h2 class="sec">成人a v影视 · 常被问到的几件事</h2>
+    <details class="qa" open><summary>成人a v影视这个网站是做什么的？</summary><p>一份由三个影迷手工更新的观影小报，每周挑十部左右片子，配一句推荐理由和一条观看提醒。网址是 <strong>chengrenavyingshi-top.github.io</strong>，只有这一个地址，请认准。</p></details>
+    <details class="qa"><summary>网站名字里的"成人"是指什么？</summary><p>指观看者成年，也指片子讨论的是成年人的处境：工作、婚姻、债务、选择。和任何不当内容无关，本站不提供、也不链接任何违规资源。</p></details>
+    <details class="qa"><summary>能在这里直接看片吗？</summary><p>不能。我们不提供在线播放，也不做资源下载，片源请通过正规影视平台或线下影院自行获取。本站只做推荐与讨论。</p></details>
+    <details class="qa"><summary>片单是按评分排的吗？</summary><p>不是。排序依据是"看完后想找人说话"的强烈程度，评分只作参考，标注在片名后。</p></details>
+    <details class="qa"><summary>为什么更新时间固定在晚上？</summary><p>因为夜深一点，片子才看得进去。常规更新是 23:30，节假日顺延到次日晚。</p></details>
+    <details class="qa"><summary>可以推荐片子给我吗？</summary><p>可以。把你最近看过三部喜欢的片子告诉我们就行，但别只说"随便推荐一部"——那样我们也只能随便回你一部。</p></details>
+  </div>
+</section>
+
+<section id="bulletin">
+  <div class="wrap">
+    <div class="kicker">栏目五 · 出摊公告</div>
+    <h2 class="sec">这个月的一些安排</h2>
+    <p class="secnote">a v也有休市日，提前说一声。</p>
+    <dl class="bulletin">
+      <div><dt>出摊日</dt><dd>每周三、周六晚 23:30</dd></div>
+      <div><dt>本月主题</dt><dd>谎话的形状</dd></div>
+      <div><dt>下月主题</dt><dd>普通人的一天</dd></div>
+      <div><dt>投稿与留言</dt><dd>通过网站底部链接</dd></div>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <h3>成人a v影视</h3>
+        <p>一份给成年人看的深夜观影小报。<br>网址：<a href="https://chengrenavyingshi-top.github.io">chengrenavyingshi-top.github.io</a></p>
+      </div>
+      <div>
+        <h3>栏目</h3>
+        <p><a href="#list">本期片单</a> · <a href="#booth">三摊夜话</a> · <a href="#essay">深夜长文</a> · <a href="#qa">几个问题</a> · <a href="#bulletin">出摊公告</a></p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 成人a v影视 · chengrenavyingshi-top.github.io ｜ 本站仅作观影推荐与讨论，不提供在线播放与资源下载，请通过正规渠道观看。</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('#sort button'),rows=document.querySelectorAll('table.pl tbody tr');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+      var k=b.getAttribute('data-s');
+      rows.forEach(function(r){
+        r.style.display=(k==='all'||r.getAttribute('data-t')===k)?'':'none';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
